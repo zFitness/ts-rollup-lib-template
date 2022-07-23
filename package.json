@@ -1,6 +1,6 @@
 {
   "name": "ts-rollup-lib-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A template repository to make Typescript lib packages with Rollup.js and Jest for testing.",
   "files": [
     "dist",
@@ -10,12 +10,7 @@
   "type": "module",
   "main": "./lib/index.js",
   "module": "./esm/index.js",
-  "exports": {
-    ".": {
-      "require": "./lib/index.js",
-      "import": "./esm/index.js"
-    }
-  },
+  "typings": "./esm/index.d.ts",
   "scripts": {
     "build": "rollup -c"
   },
