@@ -47,11 +47,13 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        dir: path.resolve(__dirname, "dist/"),
-        name: "ECLF",
+        file: path.resolve(__dirname, `dist/index.umd.production.js`),
+        name: "template",
         format: "umd",
+        sourcemap: true,
       },
     ],
+    external: [],
     plugins: [
       babel({
         exclude: "node_modules/**",

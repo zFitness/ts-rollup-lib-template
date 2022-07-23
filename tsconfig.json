@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "./esm"
+    "moduleResolution": "Node"
   },
   "include": ["src/**/*"]
 }
