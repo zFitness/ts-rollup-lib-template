@@ -1,0 +1,47 @@
+{
+  "name": "ts-rollup-lib-template",
+  "version": "1.0.0",
+  "description": "A template repository to make Typescript lib packages with Rollup.js and Jest for testing.",
+  "files": [
+    "dist",
+    "lib",
+    "esm"
+  ],
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "exports": {
+    "require": "./lib/index.js",
+    "import": "./esm/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "typescript",
+    "rollup",
+    "lib",
+    "jest",
+    "template",
+    "esbuild"
+  ],
+  "author": "zfitness",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zFitness/ts-rollup-lib-template"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "esbuild": "^0.14.49",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.9"
+  }
+}
